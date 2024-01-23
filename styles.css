@@ -1,0 +1,182 @@
+:root {
+    --color1: #0067C2;
+    --color2: #005299;
+    --color3: #003C70;
+    --color4: #6ab6f8;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--color4);
+    font-size: 18px;
+    line-height: 1.4;
+    color: white;
+}
+nav {
+    background: linear-gradient(to right, var(--color1), var(--color2) ) ;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 8.5vh;
+    box-shadow: 0px 2px 5px  black;
+    position: fixed;
+    width: 100vw;
+    padding: 20px;
+}
+nav p, nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+}
+nav p:hover {
+    background-color: var(--color3);
+    cursor: pointer;
+    border-radius: 5px;
+}
+#welcome-section {
+    background: linear-gradient(60deg, #3a3d40 0%, #181719 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+}
+#welcome-section p {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    color: var(--color2);
+}
+#projects {
+    min-height: 100vh;
+    padding: 20px;  
+}
+h2 {
+    margin: 50px auto;
+    font-size: 2em;
+    padding: 20px;
+    border-bottom: 2px solid white; 
+    max-width: 60vw;
+    text-align: center;
+    
+    
+}
+#display img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#display {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+        grid-gap: 4rem;
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+        margin-bottom: 6rem;
+}
+#display a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #003C70;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
+}
+#display p {
+    padding: 15px;
+    font-size: 1.2em;
+    
+}
+span {
+    color: transparent;
+}
+#display a:hover span {
+    color: orange;
+    transition: 1s;
+}
+#profile-link {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #003C70;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+.material-symbols-outlined {
+    font-size: 2rem;
+}
+#profile-link:hover .material-symbols-outlined  {
+    transform: translateX(10px);
+    transition: transform 0.3s ease-out;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 2rem;
+    background-color: #303841;
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif
+}
+#contact p {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.411);
+}
+#social {
+    margin-top: 50px;
+}
+#social a {
+    text-decoration: none;
+    color: white;
+}
+.contact-icon {
+    padding: 10px;
+    font-size: 1.8rem;
+    
+   
+}
+.contact-icon:hover {
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+}
+footer {
+    background-color: #303841;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+}
+@media screen and (max-width:960px){
+    nav {
+        justify-content: center;
+    }
+    .contact-icon {
+        font-size: 1rem;
+    }
+    .contact-icon:hover {
+        font-size: 1.3rem;
+    }
+    #contact h1, h2 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+}
+
